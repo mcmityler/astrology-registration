@@ -1,3 +1,16 @@
-h1{
-    color:red;
+*{
+    outline: 1px solid red;
+    margin: 0;
+    padding: 0;
+}
+.astrology-registration{
+    display: flex;
+}
+.poster-section{
+    width: 30vw;
+    height: 100vh;
+}
+.content-section{
+    width: 70vw;
+    height: 100vh;
 }
