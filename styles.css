@@ -18,12 +18,13 @@
     display: flex;
 }
 .poster-section{
-    width: 30vw;
+    width: 35vw;
     height: 100vh;
-    background: url(./images/galaxy-background.jpg) center / cover no-repeat;
+    background: url(./images/moon-background.jpg) center / cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
 }
 .poster-section p{
     color: white;
@@ -34,7 +35,41 @@
     color: white;
     text-decoration: none;
 }
+.banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    font-size: 1.3em;
+    width: 100%;
+    height: 6em;
+    background-color: rgba(34, 34, 34, 0.5);
+}
+.banner-section h1{
+    font-family:"Future-font", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+
+}
+.banner-section svg{
+    height: 100px;
+    width: 100px;
+    fill: white;
+}
 .content-section{
-    width: 70vw;
+    width: 65vw;
     height: 100vh;
+}
+.intro-section{
+    height: 35vh;
+    width: 100%;
+}
+.form-section{
+    height: 35vh;
+    width: 100%;
+}
+.submit-section{
+    height: 30vh;
+    width: 100%;
 }
