@@ -122,5 +122,19 @@
 .submit-section{
     height: 30vh;
     width: 100%;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.submit-section>button{
+    margin-left: 40px;
+    width: 200px;
+    height: 40px;
+}
+.submit-section>p{
+    margin-left: 40px;
+}
+.submit-section>p>a:visited{
+    color: white;
 }
     
