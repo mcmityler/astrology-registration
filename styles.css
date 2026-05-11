@@ -1,5 +1,5 @@
 *{
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
     margin: 0;
     padding: 0;
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -87,11 +87,14 @@
 }
 .form-section{
     height: 35vh;
+    box-shadow: 10px 6px 8px #2e2c2c;
+    background-color: black;
 }
 .form-quote{
     height: 10%;
     font-size: 1.3em;
     padding-left: 40px;
+    padding-top: 30px;
     color: var(--logo-color);
 }
 .form-section>form{
@@ -104,7 +107,7 @@
 .input-field{
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 #password-strength{
     width:100%;
@@ -118,6 +121,9 @@
     height: 100%;
     padding-left: 30px;
 }
+.update-check-section{
+    padding-top: 30px;
+}
 
 .submit-section{
     height: 30vh;
@@ -128,6 +134,7 @@
 }
 .submit-section>button{
     margin-left: 40px;
+    margin-top: 40px;
     width: 200px;
     height: 40px;
 }
