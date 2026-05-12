@@ -21,6 +21,8 @@
 .astrology-registration{
     display: flex;
 }
+
+/*-------------- POSTER SECTION ------------- */
 .poster-section{
     width: 35vw;
     height: 100vh;
@@ -60,13 +62,17 @@
     width: 100px;
     fill: var(--logo-color);
 }
+
+/*-------------- CONTENT SECTION ------------- */
 .content-section{
     width: 65vw;
     height: 100vh;
-    background-color: #000a25;
+    background-color: #080c17;
     color: white;
 
 }
+
+/*-------------- INTRO SECTION ------------- */
 .intro-section{
     height: 35vh;
     width: 100%;
@@ -85,21 +91,15 @@
     font-size: 0.9em;
     
 }
+/*-------------- FORM SECTION ------------- */
 .form-section{
     height: 35vh;
     box-shadow: 10px 6px 8px #2e2c2c;
     background-color: black;
 }
-.form-quote{
-    height: 10%;
-    font-size: 1.3em;
-    padding-left: 40px;
-    padding-top: 30px;
-    color: var(--logo-color);
-}
 .form-section>form{
     display: flex;
-    height: 90%;
+    height: 100%;
     width: 100%;
     align-items: center;
     justify-content: flex-start;
@@ -107,7 +107,11 @@
 .input-field{
     display: flex;
     flex-direction: column;
-    padding: 5px 0;
+    padding: 10px 0;
+}
+.input-field:first-of-type{
+    padding-top: 30px;
+
 }
 #password-strength{
     width:100%;
@@ -120,11 +124,16 @@
 .right-form{
     height: 100%;
     padding-left: 30px;
+
 }
 .update-check-section{
     padding-top: 30px;
 }
+.first-name, .last-name{
+    padding-top: 40px;
+}
 
+/*-------------- SUBMIT SECTION ------------- */
 .submit-section{
     height: 30vh;
     width: 100%;
@@ -143,5 +152,12 @@
 }
 .submit-section>p>a:visited{
     color: white;
+}
+
+.submit-quote{
+    height: 10%;
+    font-size: 1.3em;
+    padding-top: 10px;
+    color: var(--logo-color);
 }
     
