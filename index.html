@@ -50,7 +50,7 @@
                         <div class="input-field">
                             <label for="first-name">First Name:</label>
                             <input type="text" id="first-name" name="first-name" required>
-                            <span></span>
+                            <span onclick="document.getElementById('first-name').focus();"></span>
                         </div>
                         <div class="password-section">
                             <div class="input-field">
@@ -60,12 +60,12 @@
                             <div class="input-field">
                                 <label for="password">Password:</label>
                                 <input type="password" id="password" name="password" required>
-                                <span></span>
+                                <span onclick="document.getElementById('password').focus();"></span>
                             </div>
                             <div class="input-field">
                                 <label for="confirm-password">Confirm Password:</label>
                                 <input type="password" id="confirm-password" name="confirm-password" required>
-                                <span></span>
+                                <span onclick="document.getElementById('confirm-password').focus();"></span>
                             </div>
                             <div class="check-field">
                                 <input type="checkbox" name="view-password" id="view-password">
@@ -82,13 +82,13 @@
                         <div class="input-field">
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required>
-                            <span></span>
+                            <span onclick="document.getElementById('email').focus();"></span>
                         </div> 
 
                         <div class="input-field">
                             <label for="dob">Date of Birth (DDMMYY):</label>
                             <input type="tel" id="dob" name="dob" minlength="6" maxlength="6" required>
-                            <span></span>
+                            <span onclick="document.getElementById('dob').focus();"></span>
                             <p class="ageMinText">*must be at least 18 years old</p>
                         </div>
 
