@@ -111,9 +111,7 @@
     padding: 10px 0;
 
 }
-input{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 .input-field:first-of-type{
     padding-top: 30px;
 
@@ -138,6 +136,14 @@ input{
     padding-top: 40px;
 }
 
+input{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+input:hover,
+input:focus {
+  background-color: var(--logo-color);
+}
 input + span {
   position: relative;
 }
