@@ -7,7 +7,7 @@
     line-height: 1.3;
 }
 :root{
-    --logo-color: #fffad0;
+    --logo-color: #e9e4b9;
     
 }
 @font-face {
@@ -108,6 +108,10 @@
     display: flex;
     flex-direction: column;
     padding: 10px 0;
+
+}
+input{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .input-field:first-of-type{
     padding-top: 30px;
@@ -123,7 +127,7 @@
 }
 .right-form{
     height: 100%;
-    padding-left: 30px;
+    padding-left: 40px;
 
 }
 .update-check-section{
@@ -141,8 +145,8 @@ input:required + span::after {
   font-size: 0.7rem;
   position: absolute;
   content: "required";
-  color: white;
-  background-color: #01468f;
+  color: black;
+  background-color: var(--logo-color);
   padding: 3px 10px;
   top: -45px;
   right: 0px;
