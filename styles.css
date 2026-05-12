@@ -164,6 +164,27 @@ input:required + span::after {
     color: rgb(185, 16, 16);
 }
 
+/* VALIDATIONS */
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid + span::before {
+  content: "✖";
+  color: red;
+  position: absolute;
+  top: -20px;
+  right:-20px;
+}
+
+input:valid + span::before {
+  content: "✓";
+  color: green;
+  position: absolute;
+  top: -20px;
+  right:-20px;
+}
 /*-------------- SUBMIT SECTION ------------- */
 .submit-section{
     height: 30vh;
