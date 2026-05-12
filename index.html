@@ -49,7 +49,8 @@
                     <div class="left-form">
                         <div class="input-field">
                             <label for="first-name">First Name:</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input type="text" id="first-name" name="first-name" required>
+                            <span></span>
                         </div>
                         <div class="password-section">
                             <div class="input-field">
@@ -58,11 +59,13 @@
                             </div>
                             <div class="input-field">
                                 <label for="password">Password:</label>
-                                <input type="password" id="password" name="password">
+                                <input type="password" id="password" name="password" required>
+                                <span></span>
                             </div>
                             <div class="input-field">
                                 <label for="confirm-password">Confirm Password:</label>
-                                <input type="password" id="confirm-password" name="confirm-password">
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                                <span></span>
                             </div>
                             <div class="check-field">
                                 <input type="checkbox" name="view-password" id="view-password">
@@ -78,17 +81,15 @@
                         </div>
                         <div class="input-field">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required>
+                            <span></span>
                         </div> 
 
-                        <div class="check-field">
-                            <input type="checkbox" id="adult-check" name="adult-check">
-                            <label for="adult-check">Are you 18+ years old</label>
-                        </div>
-
                         <div class="input-field">
-                            <label for="age">Age:</label>
-                            <input type="number" id="age" name="age" min="18" max="99">
+                            <label for="dob">Date of Birth (DDMMYY):</label>
+                            <input type="tel" id="dob" name="dob" minlength="6" maxlength="6" required>
+                            <p class="ageMinText">*must be at least 18 years old</p>
+                            <span></span>
                         </div>
 
                         <div class="check-field update-check-section">

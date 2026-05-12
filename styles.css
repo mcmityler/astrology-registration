@@ -133,6 +133,24 @@
     padding-top: 40px;
 }
 
+input + span {
+  position: relative;
+}
+
+input:required + span::after {
+  font-size: 0.7rem;
+  position: absolute;
+  content: "required";
+  color: white;
+  background-color: #01468f;
+  padding: 3px 10px;
+  top: -45px;
+  right: 0px;
+}
+.ageMinText{
+    color: rgb(185, 16, 16);
+}
+
 /*-------------- SUBMIT SECTION ------------- */
 .submit-section{
     height: 30vh;
