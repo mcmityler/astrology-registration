@@ -1,5 +1,5 @@
 *{
-    /* outline: solid 1px red; */
+    outline: solid 1px red;
     margin: 0;
     padding: 0;
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -9,6 +9,8 @@
 :root{
     --logo-color: #e9e4b9;
     --required-color: #263b47;
+    --squish-animation-time: 500ms;
+    --progress-animation-time: 500ms;
     
 }
 @font-face {
@@ -169,7 +171,7 @@ input:required + span::after {
   top: -19px;
   right: 1px;
 }
-
+/* ADDED BECAUSE FOR SOME REASON REQUIRED DIDNT FIT OTHERWISE */
 #password{
     height: calc(0.7em + 10px);
 }
@@ -211,12 +213,6 @@ input:valid + span::before {
     flex-direction: column;
     gap:20px;
 }
-.submit-section>button{
-    margin-left: 40px;
-    margin-top: 40px;
-    width: 200px;
-    height: 40px;
-}
 .submit-section>p{
     margin-left: 40px;
 }
@@ -230,4 +226,69 @@ input:valid + span::before {
     padding-top: 10px;
     color: var(--logo-color);
 }
+
+/* ------------ FANCY SUBMIT BUTTON ------------ */
+
+.account-button{
+    margin-left: 80px;
+    margin-top: 40px;
     
+    position: relative;
+    padding: 1em 2.5em;
+    border:none;
+    border-radius: 0.125em;
+    cursor: pointer;
+    background-color: rgb(51, 41, 41);
+
+}
+.account-button.animating{
+    background-color: transparent;
+    color:transparent;
+    user-select: none;
+    cursor: default;
+}
+.account-button::before{
+    content:"";
+    position: absolute;
+    inset:0;
+    border: 0.125em;
+    display: none;
+    background-color: rgb(51, 41, 41);
+    animation: squish 500ms;
+    animation-fill-mode: forwards;
+    
+}
+.account-button::after{
+    content: "";
+    display: none;
+    position: absolute;
+    background-color: rgb(117, 92, 92);
+    left: 51%;
+    right: 51%;
+    top: 45%;
+    bottom: 45%;
+    border-radius: 0.25em;
+    animation: progress var(--progress-animation-time) var(--squish-animation-time);
+    animation-fill-mode: forwards;
+}
+
+.account-button.animating::before,
+.account-button.animating::after{
+    display: block;
+}
+
+@keyframes squish {
+    100%{
+        left:-25%;
+        right:-25%;
+        top: 45%;
+        bottom: 45%;
+        border-radius: 0.25em;
+    }
+}
+@keyframes progress {
+    100%{
+        left:-25%;
+        right:-25%;
+    }
+}
