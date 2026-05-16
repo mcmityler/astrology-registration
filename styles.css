@@ -1,5 +1,5 @@
 *{
-    /* outline: solid 1px red; */
+    outline: solid 1px red;
     margin: 0;
     padding: 0;
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -245,7 +245,7 @@ input:valid + span::before {
     border:none;
     border-radius: 0.125em;
     cursor: pointer;
-    background-color: rgb(51, 41, 41);
+    background-color: rgb(32, 53, 109);
 
 }
 .account-button.animating{
@@ -261,7 +261,7 @@ input:valid + span::before {
     inset:0;
     border: 0.125em;
     display: none;
-    background-color: rgb(51, 41, 41);
+    background-color: rgb(32, 53, 109);
     animation: squish var(--squish-animation-time) cubic-bezier(0.13, -0.38, 0.38, 1.9);
     animation-fill-mode: forwards;
     
@@ -270,7 +270,7 @@ input:valid + span::before {
     content: "";
     display: none;
     position: absolute;
-    background-color: rgb(117, 92, 92);
+    background-color: rgb(47, 76, 156);
     left: 51%;
     right: 51%;
     top: 45%;
@@ -285,7 +285,7 @@ input:valid + span::before {
     display: block;
 }
 .account-button.animating + .checkmark-container{
-    background-color: rgb(51, 41, 41);
+    background-color: rgb(32, 53, 109);
     border: 0.25em;
     width: 0;
     height: 0;
