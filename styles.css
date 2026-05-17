@@ -1,5 +1,5 @@
 *{
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
     margin: 0;
     padding: 0;
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -9,13 +9,14 @@
 :root{
     --logo-color: #f3eba0;
     --required-color: #263b47;
-    --dark-button-color: rgb(32, 53, 236);
-    --light-button-color: rgb(69, 118, 255);
+    --light-button-color: rgb(72, 151, 255);
+    --dark-button-color: rgb(35, 87, 155);
+    --darker-button-color: rgb(23, 57, 102);
     --squish-animation-time: 500ms;
     --progress-animation-time: 1000ms;
     --circle-animation-time: 400ms;
     --checkmark-animation-time: 300ms;
-    --button-width: 125px;
+    --button-width: 175px;
     --button-height: 40px;
 
     --background-colour: white;
@@ -54,7 +55,7 @@
     color: var(--font-colour);
     text-decoration: none;
 }
-.banner-section{
+.logo-banner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,12 +80,12 @@
     color: var(--logo-color);
 
 }
-.banner-section h1{
+.logo-banner h1{
     color: var(--logo-color);
     text-align: center;
 
 }
-.banner-section svg{
+.logo-banner svg{
     height: 100px;
     width: 100px;
     fill: var(--logo-color);
@@ -234,7 +235,6 @@ input:valid + span::before {
     width: 100%;
     display:flex;
     flex-direction: column;
-    gap:20px;
 }
 .submit-section>p{
     margin-left: 40px;
@@ -250,7 +250,7 @@ input:valid + span::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
+    min-height: 150px;
 }
 .account-button{
     
@@ -262,6 +262,12 @@ input:valid + span::before {
     cursor: pointer;
     background-color: var(--light-button-color);
 
+}
+.account-button:hover{
+    background-color: var(--dark-button-color);
+}
+.account-button:focus{
+    background-color: var(--darker-button-color);
 }
 .account-button.animating{
     background-color: transparent;
@@ -322,6 +328,11 @@ input:valid + span::before {
     animation: checkmark var(--checkmark-animation-time) 
     calc(var(--progress-animation-time) + var(--squish-animation-time) + var(--circle-animation-time) ) forwards;
 }
+.submit-button-section{
+    width: 300px;
+
+}
+
 
 @keyframes squish {
     100%{
